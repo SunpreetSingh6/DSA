@@ -1,7 +1,9 @@
+#include <bits/stdc++.h>
 #include<iostream>
 #include<vector>
+#include<string>
 using namespace std;
-
+/*
 int compress(string str)
 {
 	vector<char> temp;
@@ -42,17 +44,58 @@ int compress(string str)
 	{
 		cout<<*itr;	
 	}	
+	
 	cout<<endl;
 	return temp.size();
+}
+*/
+
+int compress(vector<char> ch)
+{
+	int i = 0;
+	int ansIndex = 0;
+	int n = ch.size();
+	while(i<n)
+	{
+		int j=i+1;
+		while(j<n && ch[i] ==ch[j])
+		{
+			j++;
+		}
+		
+		// we come here when the full vector is traversed or when we find any different character as compare to previous one 
+		ch[ansIndex++] = ch[i];
+		int count = j-i;
+		
+		if(count>1)
+		{
+			string cnt = to_string(count);
+			for(char c : cnt)
+			{
+				ch[ansIndex++] = c;
+			}
+		}
+		i=j;
+	}
 	
+	for(char c : ch)
+	{
+		cout<<c<<" ";
+	}
+	
+	return ansIndex;
 }
 
 int main()
 {
-	string str;
+//	string str;
 	cout<<"Program to print compressed string of a given string\n";
-	cout<<"Enter string to compress it :- ";
-	getline(cin,str);
-	cout<<compress(str);
+//	cout<<"Enter string to compress it :- ";
+//	getline(cin,str);
+//	cout<<compress(str);
+
+//	cout<<compress({'a','a','a','b','c','c','c','c','d','d'});
+	cout<<compress({'a','a','a','b','c','c','c','c','c','c','c','c','c','c','c','c','d','d'});
+	
 	return 1;
 }
