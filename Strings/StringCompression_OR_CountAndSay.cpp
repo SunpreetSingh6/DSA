@@ -4,7 +4,7 @@
 #include<string>
 using namespace std;
 /*
-int compress(string str)
+int compress(string str)			// Used extra space
 {
 	vector<char> temp;
 	int count=1;
@@ -50,7 +50,7 @@ int compress(string str)
 }
 */
 
-int compress(vector<char> ch)
+int compress(vector<char> ch)			// In place 
 {
 	int i = 0;
 	int ansIndex = 0;
