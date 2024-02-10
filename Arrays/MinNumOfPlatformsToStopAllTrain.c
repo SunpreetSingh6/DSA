@@ -8,7 +8,7 @@ void main()
 		https://www.youtube.com/watch?v=E0_Meg_ACMY&list=PLvI381EFf-Uio-3KkcLtYoe7GaIaxSb6f&index=12
 		
 	*/
-	//          Ex 1 Ans-3			 Ex 2  Ans-1		Ex 3 Ans-3
+	//          Ex 1 Ans-3			 Ex 2  Ans-2		Ex 3 Ans-3
 	// ar = 200 340 410 430 470  ,  900 1100 1235  , 900 940 950 110 1500 1800 
 	// de = 250 440 420 435 500  , 	1100 1200 1240 , 910 1200 1120 1130 1900 2000
 	

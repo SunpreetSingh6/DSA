@@ -1,7 +1,6 @@
 #include <iostream>
-
 using namespace std;
-///*
+
 string replaceSpaces(string &str){
 	int l = str.length();
     int i = 0;

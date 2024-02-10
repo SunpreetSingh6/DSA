@@ -12,6 +12,7 @@ void findDuplicate(int ar[] , int size)
 			if(ar[i] == ar[j])
 			{
 				duplicate = ar[i];
+				break;
 			}
 		}
 	}

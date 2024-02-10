@@ -2,7 +2,7 @@
 #include<string.h>
 
 /*
-		3 types of reversing :- Normally reversing the string , reverse each word of the string , reverse the order of words(combo of previous 2)
+		3 types of reversing :- Normally reversing the string, reverse each word of the string, reverse the order of words(combo of previous 2)
 */
 
 void reverseEachWordOfString(char arr[])  			// you are great -> uoy era taerg

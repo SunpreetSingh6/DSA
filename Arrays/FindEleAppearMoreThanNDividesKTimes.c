@@ -8,11 +8,12 @@ void findElements(int ar[] , int size , int k)
 	for(i=0;i<size;i++)
 	{
 		count=1;
-		for(j=i+1;j<size;j++)
+		for(j=i+1;j<size && ar[j]!=0 ;j++)
 		{
 			if(ar[i] == ar[j])
 			{
 				count++;
+				ar[j]=0;
 			}
 		}
 		if(count > n)
@@ -20,7 +21,7 @@ void findElements(int ar[] , int size , int k)
 			printf("%d\t" , ar[i]);
 		}
 		
-		// Having issue in this example 1, 1, 2, 2, 3, 5, 4, 2, 2, 3, 1, 1, 1 ; size=13 , k=4
+		// Example:- 1 1 2 2 3 5 4 2 2 3 1 1 1 ; size=13 , k=4
 	}
 }
 void printArray(int ar[] , int size)

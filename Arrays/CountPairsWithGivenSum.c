@@ -18,6 +18,7 @@
 
 void findPairs(int ar[] , int size , int num)
 {
+/* 		Time complexity :- O(n^2);	
 	int i,j,pairs;
 	for(i=0;i<size;i++)
 	{
@@ -30,6 +31,26 @@ void findPairs(int ar[] , int size , int num)
 		}	
 	}
 	printf("\nTotal number of pairs are :- %d" , pairs);
+*/
+
+/*	 Time Complexity :- O(nlogn)
+
+	sort(nums, nums + n);		// sort fn takes O(nlogn)
+    int low = 0;
+    int high = n - 1;
+    int count=0;
+    while (low < high)
+    {
+        if (nums[low] + nums[high] == target)
+        {
+            count++;
+//            cout << "Pair found (" << nums[low] << ", " << nums[high] << ")\n";
+        }
+        (nums[low] + nums[high] <= target)? low++: high--;
+    }
+
+    return count;
+*/
 }
 void printArray(int ar[] , int size)
 {
